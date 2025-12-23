@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#222B45"
+    tools:context=".SettingsActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:padding="20dp"
+        android:textStyle="bold"
+        android:background="#151A30"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background2"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Temperature Unit (°C / °F)"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            />
+
+        <Switch
+            android:id="@+id/unitSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:thumbTint="#FFBF00"
+            android:trackTint="#FFFFFF"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Switch for Celsius (Metric) or Fahrenheit (Imperial)"
+        android:textSize="12sp"
+        android:textColor="#BFBFBF"
+        android:paddingStart="16dp"
+        android:paddingTop="4dp"
+        />
+
+</LinearLayout>

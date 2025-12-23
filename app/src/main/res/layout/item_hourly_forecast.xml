@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="8dp"
+    android:background="@drawable/background_forecast_item"
+    android:layout_marginEnd="8dp">
+
+    <TextView
+        android:id="@+id/timeOrDayText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10 PM"
+        android:textSize="14sp"
+        android:textColor="#BFBFBF"
+        android:fontFamily="@font/urbanist"
+        />
+
+    <ImageView
+        android:id="@+id/forecastIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_01d"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:contentDescription="Weather Icon"
+        />
+
+    <TextView
+        android:id="@+id/hourlyTempText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="25°"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:fontFamily="@font/urbanist"
+        />
+
+    <TextView
+        android:id="@+id/dailyTempRangeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:fontFamily="@font/urbanist"
+        />
+</LinearLayout>
